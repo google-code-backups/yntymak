@@ -1,0 +1,19 @@
+1) 
+Update, Work on your Code
+Synchronize
+Resolve Conflicts
+Mark as Merged
+Commit
+
+2) 
+Check-in
+Check-out
+Update, Work on your Code
+Synchronize
+Resolve Conflicts
+Mark as Merged
+Commit
+
+3) In our opinion, committing to the repository often is not beneficial, because we have to synchronize often. As it’s team work, every developer should see what changes were made.That is why, to see updates it is enough to commit them every half an hour.
+
+4) We think that Synchronizing and Updating+Committing are not the same. Because synchronize doesn't actually do anything, it just tells you what needs to be done. Whereas Updating is obtaining changes and Committing saving those changes into repository.
