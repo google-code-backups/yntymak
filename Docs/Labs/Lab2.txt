@@ -1,0 +1,17 @@
+1) Web Site - Admin, User
+
+User can see galery, news, etc.
+User have access to see menu. 
+User can reserve table online.
+Admin can see all reservations.
+
+
+2) Android App - Admin, User
+
+User can see all menu.
+User can order meal at that moment.
+User can call waiter at any time.
+Admin can see who ordered which meal.
+
+
+ 
