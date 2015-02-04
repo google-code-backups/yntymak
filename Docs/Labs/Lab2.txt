@@ -1,17 +1,17 @@
-1) Web Site - Admin, User
+1) Web Application Customer(any person) - 
 
-User can see galery, news, etc.
-User have access to see menu. 
-User can reserve table online.
-Admin can see all reservations.
+Customer can see galery, news, contacts and menu 
+Customer can reserve table online and change the reservation
+Customer can order the menu online, if he reserves the table
 
 
-2) Android App - Admin, User
+2) Android App User -
 
-User can see all menu.
-User can order meal at that moment.
-User can call waiter at any time.
-Admin can see who ordered which meal.
+Note: customer use this application only inside restaurant
+
+Customer can see menu at any time because the application is always accesable
+Customer can order meal without existence waiter at the moment
+Customer can call waiter at any time using this application
 
 
  
