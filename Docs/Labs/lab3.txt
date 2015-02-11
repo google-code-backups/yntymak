@@ -1,0 +1,7 @@
+3 major problems in an example:
+	1) Actually there are 2 actors(user and admin), but there is no information and screenshots about "admin" actor.
+	2) Not detailed description about screenshots. There is only one sentence for one screenshot.
+	3) Each element(button, input fields, menus, action mechanisms and etc.) of screenshots are not written.
+2 main benefits of doing screenshots:
+	1) In future it will help us to realize and develope the project easier.
+	2) It makes easier and more comfortable to discuss details with customer, when you have ready screenshots of the project.
