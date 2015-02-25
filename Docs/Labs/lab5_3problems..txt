@@ -1,0 +1,5 @@
+Three main problems in second example.
+1) in registration of the student and employee, there are no preconditions and postconditions. But it is necessary, because 
+if the student want to register and there is already exist such name, what should user do?
+2) they don't have section 3.5 in this example, so it is a big problem.
+3) section 2 is not fully described.
