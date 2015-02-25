@@ -1,0 +1,6 @@
+FEATURES:
+Use-case: reservation of table 
+- system that shows is table reserved or not reserved on that particular time which choose a client;
+- system that shows could client choose a particular table or not depending on the amount of people that will come.
+Use-case: change reservation
+- e-mail		       
