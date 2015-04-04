@@ -1,0 +1,91 @@
+﻿        <script>
+            jQuery(document).ready(function ($) {
+                var options = {
+                    $AutoPlay: true,
+                    $ArrowNavigatorOptions: {
+                        $Class: $JssorArrowNavigator$,
+                        $ChanceToShow: 2
+                    },
+                    $BulletNavigatorOptions: {
+                        $Class: $JssorBulletNavigator$,
+                        $ChanceToShow: 2,
+                        $AutoCenter: 1,
+                    }
+                };
+                var jssor_slider1 = new $JssorSlider$('slider1_container', options);
+            });
+        </script>
+ 
+        <div id="slider1_container" style="position: relative; top: 0px; left: 0px; width: 1000px; height: 370px;">
+            <!-- Slides Container -->
+            <div u="slides" style="cursor: move; position: absolute; overflow: hidden; left: 0px; top: 0px; width: 1000px; height: 370px;">
+                <div><img u="image" src="Images/01.jpg" /></div>
+                <div><img u="image" src="Images/02.jpg" /></div>
+                <div><img u="image" src="Images/03.jpg" /></div>
+            </div>
+
+                 <style>
+                /* jssor slider arrow navigator skin 19 css */
+                /*
+                .jssora19l              (normal)
+                .jssora19r              (normal)
+                .jssora19l:hover        (normal mouseover)
+                .jssora19r:hover        (normal mouseover)
+                .jssora19ldn            (mousedown)
+                .jssora19rdn            (mousedown)
+                */
+                .jssora19l, .jssora19r, .jssora19ldn, .jssora19rdn
+                {
+            	    position: absolute;
+            	    cursor: pointer;
+            	    display: block;
+                    background: url(Images/a19.png) no-repeat;
+                    overflow:hidden;
+                }
+                .jssora19l { background-position: -5px -35px; }
+                .jssora19r { background-position: -65px -35px; }
+                .jssora19l:hover { background-position: -125px -35px; }
+                .jssora19r:hover { background-position: -185px -35px; }
+                .jssora19ldn { background-position: -245px -35px; }
+                .jssora19rdn { background-position: -305px -35px; }
+            </style>
+            <!-- Arrow Left -->
+            <span u="arrowleft" class="jssora19l" style="width: 50px; height: 50px; top: 140px; left: 8px;">
+            </span>
+            <!-- Arrow Right -->
+            <span u="arrowright" class="jssora19r" style="width: 50px; height: 50px; top: 140px; right: 8px">
+            </span>
+
+            <!-- Bullet Navigator Skin Begin -->
+                <style>
+                    /* jssor slider bullet navigator skin 21 css */
+                    /*
+                    .jssorb21 div           (normal)
+                    .jssorb21 div:hover     (normal mouseover)
+                    .jssorb21 .av           (active)
+                    .jssorb21 .av:hover     (active mouseover)
+                    .jssorb21 .dn           (mousedown)
+                    */
+                    .jssorb21 div, .jssorb21 div:hover, .jssorb21 .av
+                    {
+                        background: url(Images/b21.png) no-repeat;
+                        overflow:hidden;
+                        cursor: pointer;
+                    }
+                    .jssorb21 div { background-position: -5px -5px; }
+                    .jssorb21 div:hover, .jssorb21 .av:hover { background-position: -35px -5px; }
+                    .jssorb21 .av { background-position: -65px -5px; }
+                    .jssorb21 .dn, .jssorb21 .dn:hover { background-position: -95px -5px; }
+                </style>
+                <!-- bullet navigator container -->
+                <div u="navigator" class="jssorb21" style="position: absolute; bottom: 16px; left: 6px;">
+                    <!-- bullet navigator item prototype -->
+                    <div u="prototype" style="POSITION: absolute; WIDTH: 19px; HEIGHT: 19px; text-align:center; line-height:19px; color:White; font-size:12px;"></div>
+                </div>
+            <!-- Bullet Navigator Skin End -->
+
+        </div>
+
+                 
+    </div>
+  </div>

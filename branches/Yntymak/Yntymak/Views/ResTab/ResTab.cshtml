@@ -1,0 +1,148 @@
+﻿@{
+    ViewBag.Title = "ResTab";
+}
+
+@{
+    ViewBag.Title = "Главная";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+
+    <link href="@Url.Content("~/CSS/bootstrab.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/CSS/style.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/CSS/datepicker.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/CSS/bootstrap-datetimepicker.css")" rel="stylesheet" type="text/css" />
+
+
+    <script src="@Url.Content("~/JS/jquery-1.9.1.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/JS/moment.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/JS/moment-with-locales.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/JS/jssor.slider.mini.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/JS/bootstrap.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/JS/bootstrap-datetimepicker.js")" type="text/javascript"></script>
+   
+
+    <title>Ынтымак</title>
+
+</head>
+<body>
+    
+    <div id="gradient"></div>
+    
+    <div id = "main">
+        <div id="title">
+            <div id="title_headers">
+                <h2 id="small_title1">ресторан</h2>
+                <h1 id="big_title">Ынтымак</h1>
+                <h2 id="small_title2">мейрамхана</h2>
+            </div>
+        </div>
+            
+        <div id="menu">
+            @{ Html.RenderAction("Menu", "Nav"); }
+        </div>
+
+        <div id="tres_blank">
+            
+            <form>
+
+            <div id="contact_info">
+
+                  <div id ="contact_info_title">Контактная информация</div>
+
+                  <div id="contact_info_ns">
+                      <label class="col-lg-2 control-label labels">Имя*</label>
+                      <div class="col-lg-10 inputs">
+                        <input type="text" required class="form-control input-sm" id="ResName" placeholder="Введите ваше имя..." title="Пожалуйста заполните это поле">
+                      </div>
+
+                      <label class="col-lg-2 control-label labels">Фамилия*</label>
+                      <div class="col-lg-10 inputs">
+                        <input type="text" required class="form-control input-sm" id="ResSur" placeholder="Введите вашу фамилию...">
+                      </div>
+                   </div>
+
+                  
+                  <div id="contact_info_phem">
+                      <label class="col-lg-2 control-label labels">Телефон*</label>
+                      <div class="col-lg-10 inputs">
+                        <input type="text" required class="form-control input-sm" id="ResPhone" placeholder="Введите ваш номер телефона...">
+                      </div>
+
+                      <label class="col-lg-2 control-label labels">e-mail*</label>
+                      <div class="col-lg-10 inputs">
+                        <input type="email" required class="form-control input-sm" id="ResEmail" placeholder="Введите ваш e-mail...">
+                      </div>
+                  </div>
+            </div>
+            <div id="res_info">
+
+                <div id ="res_info_title">Резервирование</div>
+
+                  <div id="res_info_dtp">
+                      <label class="control-label labels inputs_col">Дата*</label>
+                      <div class="container" style ="margin-left: 5px;">
+                        <div class="row">
+                            <div class='col-sm-6'>
+                                <div class="form-group">
+                                    <div class='input-group date' id='datetimepicker2' style="width: 300px;">
+                                        <input type='text' class="form-control input-sm" />
+                                        <span class="input-group-addon input-sm">
+                                            <span class="glyphicon glyphicon-calendar"></span>
+                                        </span>     
+                                    </div>
+                                </div>
+                            </div>
+                            <script type="text/javascript">
+                                $(function () {
+                                    $('#datetimepicker2').datetimepicker({
+                                        locale: 'ru'
+                                    });
+                                });
+                            </script>
+                        </div>
+                    </div>
+
+                    <div class="form-group inputs inputs_col" style="width: 300px;">
+                      <label class="control-label labels" for="inputSmall">Количество людей*</label>
+                      <input class="form-control input-sm" type="number" id="people_number" required>
+                    </div>
+
+                    <div class="form-group inputs inputs_col" style="width: 300px;">
+                      <label class="control-label labels" for="inputSmall">Выберите стол*</label>
+                      <input class="form-control input-sm" type="number" id="table_number" required>
+                    </div>
+
+                    <div class="form-group inputs inputs_col" style="width: 300px;">
+                      <label class="control-label labels" for="inputSmall">Пожелания</label>
+                      <textarea class= "form-control"rows="7" cols ="35"></textarea>
+                    </div>                    
+
+
+                    </div>
+
+                
+                        <div id="plan_image">
+                        </div>
+
+            </div>
+
+                <div id="res_btn">
+                    <input type ="submit" value ="Зарезервировать">
+                </div>
+            </form>
+        </div>
+
+        
+
+        <div id="bottom_menu">
+            @{ Html.RenderAction("BottomMenu", "Nav"); }
+        </div>
+
+    </div>
+
+</body>
+</html>
