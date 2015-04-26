@@ -1,0 +1,61 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    <html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Admin page</title>
+        <link href="/css/bootstrap.css" rel="stylesheet" media="screen">
+
+    </head>
+    <body>
+        <script type="text/javascript" src="/js/jquery-1.11.2.min.js"></script>
+        <script src="/js/bootstrap.js"></script>
+
+        <h3 style="color: #00bc8c;">Администратор бөлімі</h3><br>
+
+        <ul class="nav nav-tabs">
+
+            <li class="active"><a href="#tableReserv" data-toggle="tab" aria-expanded="true">Үстел тапсырысы</a></li>
+            <li><a href="#menuReserv" data-toggle="tab" aria-expanded="true">Мәзір тапсырысы</a></li>
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                    Мәзір <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="#dropdownFirstFood" data-toggle="tab">Бірінші ас</a></li>
+                    <li><a href="#dropdownSecondFood" data-toggle="tab">Екінші ас</a></li>
+                    <li><a href="#dropdownSalads" data-toggle="tab">Салаттар</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#dropdownDrinks" data-toggle="tab">Сусындар</a></li>
+                    <li><a href="#dropdownDesserts" data-toggle="tab">Десерттер</a></li>
+                </ul>
+            </li>
+
+        </ul>
+        <div id="myTabContent" class="tab-content">
+            <div class="tab-pane fade" id="tableReserv">
+                <p>Үстел тапсырыстары</p>
+            </div>
+            <div class="tab-pane fade active in" id="menuReserv">
+                <p>Мәзір тапсырыстары</p>
+            </div>
+            <div class="tab-pane fade" id="dropdownFirstFood">
+                <br><p style="margin-left:500px; font-size: larger;">Бірінші ас түрлері</p><br>
+
+            </div>
+            <div class="tab-pane fade" id="dropdownSecondFood">
+                <br><p style="margin-left:500px; font-size: larger;">Екінші ас түрлері</p><br>
+
+            </div>
+            <div class="tab-pane fade" id="dropdownSalads">
+                <br><p style="margin-left:500px; font-size: larger;">Салат түрлері</p><br>
+            </div>
+            <div class="tab-pane fade" id="dropdownDrinks">
+                <br><p style="margin-left:500px; font-size: larger;">Сусын түрлері</p><br>
+            </div>
+            <div class="tab-pane fade" id="dropdownDesserts">
+                <br><p style="margin-left:500px; font-size: larger;">Десерт түрлері</p><br>
+            </div>
+        </div>
+    </body>
+</html>
+}
